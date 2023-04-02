@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-devices</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-s-devices.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="head-div" id="gotop">
+            <a href="index.html" class="index">
+                <img src="s-device logo.png" alt="s-device" class="logo">
+            </a>
+            <div class="search">
+                <input type="search" autocomplete="on" placeholder="Search for products, brands and categories" class="focus">
+                <button for="input"><span class="material-symbols-outlined">search</span></button>
+            </div>
+            <div class="cart">
+                <a href="#" class="s-cart">
+                    <span class="q-cart">Cart</span>
+                    <span class="material-symbols-outlined cart-icon">
+                        shopping_cart
+                    </span>
+                </a>
+            </div>
+            <div class="menu"></div>
+        </div>
+
+        <div class="nav-div">
+            <div class="close-menu"></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <select name="Categories" id="categories">
+                    <option>Categories</option>
+                    <option>Mobile Phones</option>
+                    <option>Laptops</option>
+                    <option>Televison</option>
+                    <option>Accessories</option>
+                    <option>Home Appliances</option>
+                    <option>Lorem</option>
+                    <option>Lorem</option>
+                    <option>Lorem</option>
+                    <option>Lorem</option>
+                    <option>Lorem</option>
+                    <option>Lorem</option>
+                    <option>Lorem</option>
+                </select>
+                <a href="#">Shops</a>
+                <a href="#">Discounts</a>
+                <a href="#">Delivery</a>
+                <a href="#">Help</a>
+                <a href="#" class="sign-in">Signin</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="ad">
+            <a href="#" class="v-more">
+                VIEW MORE &RightArrow;
+            </a>
+        </div>
+        <div class="container"><!--Parent for two div sections-->
+            <div class="top-brands"><!--First div section-->
+                <h3>Top Brands</h3>
+                    <a href="#">Samsung</a>
+                    <a href="#">iPhone</a>
+                    <a href="#">Hisense</a>
+                    <a href="#">LG</a>
+                    <a href="#">Infinix</a>
+                    <a href="#">Tecno</a>
+                    <a href="#">Xaiomi</a>
+                    <a href="#">Oppo</a>
+                    <a href="#">Sony</a>
+                    <a href="#">Vivo</a>
+                    <a href="#">Microsoft</a>
+            </div>
+
+            <div class="category-ads"><!--Second div section-->
+                <div class="background">
+                    <img src="img1.jpg" alt="Image" id="img1">
+                    <img src="img2.jpg" alt="Image" id="img2">
+                    <img src="img3.jpg" alt="Image" id="img3">
+                    <img src="img4.jpg" alt="Image" id="img4">
+                </div>
+                <div class="showcase">
+                    <button id="btn1" onclick="next1()">Home Appliances</button>
+                    <button id="btn2" onclick="next2()">Phones</button>
+                    <button id="btn3" onclick="next3()">Gadets</button>
+                    <button id="btn4" onclick="next4()">Laptops</button>
+                </div>
+            </div>
+            <div class="toggle-brand">
+                <span class="material-symbols-outlined">
+                    store
+                    </span>
+            </div>
+        </div>
+        <div class="hot-deal-container">
+            <img src="iphone14-series.png" alt="iphone14-series">
+            <div class="hot-deal">
+                <h3>Hot Deals</h3>
+                <div class="deal-text">
+                    <p>Iphone 14 </p>
+                    <p>Pro max</p><br>
+                    <span>Get the iPhone 14 Pro Max on <b>50%</b> Discount Today</span><br>
+                    <small>Take amazing detailed photo of yourself with the new iphone 14 pro max</small><br>
+                    <ul>
+                        <li><a href="#" class="hot-deal-link1">Buy Now &rightarrow;</a></li>
+                        <li><a href="#" class="hot-deal-link2">See other deals &rightarrow;</a></li>
+                    </ul>
+                </div>
+                <div class="deal-img"><!--for the iphone image--></div>
+            </div>
+        </div>
+        
+      <div class="stocks">
+            <div class="header">
+                <span>Official Store Deals</span>
+                <a href="#">View More &RightArrow;</a>
+            </div>
+            <div class="stocks-container">
+                <div class="box box1">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/71/3196612/1.jpg?6848" alt="Oppo A17k">
+                    <span>Oppo A17k</span>
+                    <span class="price1">₦ 70,000</span>
+                    <small class="price2">₦ 120,000</small>
+                    <a href="#" class="buy"></a>
+                </div>
+                <div class="box box2">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/44/3567422/1.jpg?0317" alt="Ps 4">
+                    <span>Sony Playstation 5</span>
+                    <span class="price1">₦ 330,000</span>
+                    <small class="price2">₦ 400,000</small>
+                    <a href="#" class="buy"></a>
+                </div>
+                <div class="box box3">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/42/9161622/1.jpg?6081" alt="Asus vivobook">
+                    <span>Asus Vivibook</span>
+                    <span class="price1">₦ 79,000</span>
+                    <small class="price2">₦ 100,000</small>
+                    <a href="#" class="buy"></a>
+                </div>
+                <div class="box box4">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/39/4927521/1.jpg?8740" alt="Galaxy A03">
+                    <span>Samsung Galaxy A03</span>
+                    <span class="price1">₦ 60,000</span>
+                    <small class="price2">₦ 100,000</small>
+                    <a href="#" class="buy"></a>
+                </div>
+                <div class="box box5">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/44/6628991/1.jpg?6413" alt="Xaiomi Note 11s">
+                    <span>Xaiomi Note 11s</span>
+                    <span class="price1">₦ 110,000</span>
+                    <small class="price2">₦ 160,000</small>
+                    <a href="#" class="buy"></a>
+                </div>
+            </div>
+        </div>
+        <div class="stocks">
+            <div class="header">
+                <span>Rush Hour</span>
+                <a href="#">View More &RightArrow;</a>
+            </div>
+            <div class="stocks-container">
+                <div class="box box1">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/57/6414122/1.jpg?2313" alt="Syinix 32">
+                    <span>Syinix 32"</span>
+                    <span class="price1">₦ 20,000</span>
+                    <small class="price2">₦ 45,000</small>
+                    <a href="#" class="buy"></a>
+                </div>
+                <div class="box box2">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/12/4214031/1.jpg?0003" alt="Tecno Power bank">
+                    <span>Tecno 10000mAh Powerbank</span>
+                    <span class="price1">₦ 4,000</span>
+                    <small class="price2">₦ 10,000</small>
+                    <a href="#" class="buy"></a>
+                </div>
+                <div class="box box3">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/93/3531212/1.jpg?1294" alt="Dual shock 4">
+                    <span>Sony PS4 Dual Shock 4</span>
+                    <span class="price1">₦ 10,000</span>
+                    <small class="price2">₦ 25,000</small>
+                    <a href="#" class="buy"></a>
+                </div>
+                <div class="box box4">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/81/9566991/1.jpg?7554" alt="Tecno Pop 5">
+                    <span>Tecno Pop 5</span>
+                    <span class="price1">₦ 22,000</span>
+                    <small class="price2">₦ 52,000</small>
+                    <a href="#" class="buy"></a>
+                </div>
+                <div class="box box5">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/83/0430622/1.jpg?0265" alt="Infinix Hot 20i">
+                    <span>Infinix Hot 20i</span>
+                    <span class="price1">₦ 30,000</span>
+                    <small class="price2">₦ 80,000</small>
+                    <a href="#" class="buy"></a>
+                </div>
+            </div>
+        </div>
+      <article>
+        <h1>S-Devices <span> - The Home of Electronic Devices</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet venenatis urna cursus eget nunc scelerisque viverra. Fermentum et sollicitudin ac orci. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Commodo viverra maecenas accumsan lacus vel. Magna sit amet purus gravida quis blandit. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Fermentum et sollicitudin ac orci phasellus. Est ante in nibh mauris cursus mattis molestie a iaculis. Natoque penatibus et magnis dis parturient. Et tortor at risus viverra adipiscing at in. Morbi leo urna molestie at elementum eu facilisis sed odio. Tincidunt eget nullam non nisi est sit. Quisque egestas diam in arcu cursus euismod quis viverra. </p>
+        <p>Magna ac placerat vestibulum lectus. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum. Praesent tristique magna sit amet. Dui ut ornare lectus sit. Massa tincidunt dui ut ornare lectus sit amet. Eget gravida cum sociis natoque. Vitae et leo duis ut diam quam. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Id volutpat lacus laoreet non curabitur gravida arcu ac. Velit egestas dui id ornare arcu odio ut sem nulla. Posuere morbi leo urna molestie at. Laoreet id donec ultrices tincidunt arcu.</p>
+      </article>
+    </main>
+
+    <footer>
+        <div class="back-to-top">
+            <button onclick="gotop()">Back to top</button>
+        </div>
+        <div class="contents-container">
+            <div class="content-box1">
+                <span class="material-symbols-outlined">paid</span>
+                <p>Great value</p>
+                <small>We offer competitive prices on over 100 million items.</small>
+            </div>
+            <div class="content-box2">
+                <span class="material-symbols-outlined">credit_card</span>
+                <p>Safe payment</p>
+                <small>Pay with the world’s most popular and secure payment methods.</small>
+            </div>
+            <div class="content-box3">
+                <span class="material-symbols-outlined">verified_user</span>
+                <p>Shop with confidence</p>
+                <small>Our Buyer Protection policy covers your entire purchase journey.</small>
+            </div>
+            <div class="content-box4">
+                <span class="material-symbols-outlined">local_shipping</span>
+                <p>Worldwide shopping</p>
+                <small>We ship to over 200 countries and regions, and our site comes in 12 languages.</small>
+            </div>
+            <div class="content-box5">
+                <span class="material-symbols-outlined">help</span>
+                <p>Help center</p>
+                <small>Round-the-clock assistance for a smooth shopping experience.</small>
+            </div>
+        </div>
+        <div class="connect-container">
+            <div class="connect1">
+                <nav>
+                <p>Stay connected with us:</p>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgba(255, 128, 0, 0.798)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg></a>
+                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="rgba(255, 128, 0, 0.798)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                  </svg></a>
+                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="rgba(255, 128, 0, 0.798)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                  </svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="rgba(255, 128, 0, 0.798)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                  </svg></a>
+                </nav>
+            </div>
+            <div class="connect2">
+                <p>Shopping with us:</p>
+                <ul>
+                    <li><a href="#">Making payments</a></li>
+                    <li><a href="#">Delivery options</a></li>
+                    <li><a href="#">Buyer Protection</a></li>
+                </ul>
+            </div>
+            <div class="connect3">
+                <p>Help:</p>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Disputes & Reports</a></li>
+                    <li><a href="#">Buyer Protection</a></li>
+                    <li><a href="#">Report IPR infringement</a></li>
+                    <li><a href="#">Regulated Information</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="final">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Your Ads Privacy Choices</a>
+            <p>&COPY;2020-2023, S-Devices.com, Inc. </p>
+        </div>
+    </footer>
+
+<!--All Script below-->    
+<script>
+    /* jQuery script for Search border*/
+    $(document).ready(function(){
+        $(".focus").focusin(function(){
+            $(".search").css({"border":"3px solid white"});
+        });
+        $(".focus").focusout(function(){
+            $(".search").css({"border":"none"});
+        });
+        //Jquery for menu toggle
+        $(".menu").click(function(){
+            $(".nav-div").show(500);
+            $(".menu").hide(500);
+        });
+        $(".close-menu").click(function(){
+            $(".nav-div").hide(500);
+            $(".menu").show(500);
+        });
+        $(".toggle-brand").click(function(){
+            $(".top-brands").fadeToggle(500);
+        });
+    });
+    /* Javascript for class('background') images switch */
+    function next2(){
+        document.getElementById('btn2').style.backgroundColor='rgba(0, 0, 0, 0.531)';
+        document.getElementById('btn1').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn3').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn4').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn2').style.borderTop='15px solid rgba(255, 128, 0, 0.798)';
+        document.getElementById('btn1').style.borderTop='none';
+        document.getElementById('btn3').style.borderTop='none';
+        document.getElementById('btn4').style.borderTop='none';
+        document.getElementById('img2').style.display='block';
+        document.getElementById('img1').style.display='none';
+        document.getElementById('img3').style.display='none';
+        document.getElementById('img4').style.display='none';
+    }
+    function next3(){
+        document.getElementById('btn3').style.backgroundColor='rgba(0, 0, 0, 0.531)';
+        document.getElementById('btn1').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn2').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn4').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn3').style.borderTop='15px solid rgba(255, 128, 0, 0.798)';
+        document.getElementById('btn1').style.borderTop='none';
+        document.getElementById('btn2').style.borderTop='none';
+        document.getElementById('btn4').style.borderTop='none';
+        document.getElementById('img3').style.display='block';
+        document.getElementById('img1').style.display='none';
+        document.getElementById('img2').style.display='none';
+        document.getElementById('img4').style.display='none';
+    }
+    function next4(){
+        document.getElementById('btn4').style.backgroundColor='rgba(0, 0, 0, 0.531)';
+        document.getElementById('btn1').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn3').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn2').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn4').style.borderTop='15px solid rgba(255, 128, 0, 0.798)';
+        document.getElementById('btn1').style.borderTop='none';
+        document.getElementById('btn3').style.borderTop='none';
+        document.getElementById('btn2').style.borderTop='none';
+        document.getElementById('img4').style.display='block';
+        document.getElementById('img1').style.display='none';
+        document.getElementById('img3').style.display='none';
+        document.getElementById('img2').style.display='none';
+    }
+    function next1(){
+        document.getElementById('btn1').style.backgroundColor='rgba(0, 0, 0, 0.531)';
+        document.getElementById('btn2').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn3').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn4').style.backgroundColor='rgba(0, 0, 0, 0.743)';
+        document.getElementById('btn1').style.borderTop='15px solid rgba(255, 128, 0, 0.798)';
+        document.getElementById('btn2').style.borderTop='none';
+        document.getElementById('btn3').style.borderTop='none';
+        document.getElementById('btn4').style.borderTop='none';
+        document.getElementById('img1').style.display='block';
+        document.getElementById('img2').style.display='none';
+        document.getElementById('img3').style.display='none';
+        document.getElementById('img4').style.display='none';
+    }
+
+    /* Javascript for back to top button */
+    function gotop(){
+        let content = document.getElementById('gotop')
+        content.scrollIntoView({behavior:'smooth'});
+    }
+</script>
+</body>
+</html>

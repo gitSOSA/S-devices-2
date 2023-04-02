@@ -1,0 +1,236 @@
+@media screen and (min-width:1200px) {
+    .deal-text p{
+        font-size: 4em;
+    }
+}
+@media screen  and (min-width:1000px) {
+    .hot-deal-container img{
+        width: 50%;
+    }
+}
+@media screen and (max-width:1999px) {
+    .deal-text p{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width:900px) {
+    .deal-text p{
+        font-size: 2em;
+    }
+    .deal-text{
+        line-height: normal;
+    }
+}
+@media screen and (max-width:700px) {
+    .deal-text{
+        text-align: left;
+    }
+    .deal-text ul{
+        flex-flow: column;
+        font-size: 1.3rem;
+    }
+    .deal-text a{
+        padding: 0.5rem;
+    }
+}
+@media screen  and (max-width:480px) {
+    header{
+        height: 100px;
+    }
+    .head-div{
+        height: 100%;
+        border-bottom: none;
+    }
+    .logo{
+        width: 20%;
+        transform: translateX(-10px);
+    }
+    .search{
+        left: 22%;
+    
+    }
+    .cart{
+        top: 37.5%;
+        left: 74%;
+    }
+    .s-cart{
+        box-shadow: none;
+    }
+    .q-cart{
+        display: none;
+    }
+    .menu{
+        visibility: visible;
+        position: absolute;
+		top: 35%;
+		left: 88%;
+		border: 1px solid white;
+		height: 35px;
+		width: 35px;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		cursor: pointer;
+		z-index: 1;
+    }
+    .menu:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .menu::before{
+        content: '';
+		position: absolute;
+		height: 0;
+		width: 100%;
+		border: 1px solid white;
+		top: 20%;
+		left: 0;
+		box-shadow: 0 10px white;
+    }
+    .menu::after{
+        content: '';
+		position: absolute;
+		height: 0;
+		width: 100%;
+		border: 1px solid white;
+		bottom: 20%;
+		left: 0;
+    }
+    .nav-div{
+        display: none;/* For Jquery toggle */
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        z-index: 1;
+        align-items: flex-start;
+    }
+    .close-menu{
+        visibility: visible;
+        border: 4px solid black;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 1.5%;
+        left: 80%;
+        cursor: pointer;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .close-menu::before{
+        content: '';
+        border: 1px solid rgba(255, 128, 0, 0.774);
+        width: 100%;
+        transform: rotate(45deg) translateY(8px) translateX(6px);
+    }
+    .close-menu::after{
+        content: '';
+        border: 1px solid rgba(255, 128, 0, 0.74);
+        width: 100%;
+        transform: rotate(-45deg) translateY(-8px) translateX(6px);
+    }
+    .close-menu:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav-div nav{
+        flex-flow: column;
+        width: 90%;
+        height: 80%;
+        position: absolute;
+        top: 10%;
+        padding: 1.6rem;
+    }
+    .nav-div nav>select{
+        font-size: 1.6rem;
+    }
+    .ad{
+        margin-top: 20px;
+        height: 180px;
+    }
+    .v-more{
+        font-size: 1.3rem;
+        border: 1px solid;
+    }
+    .container{
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        height: 250px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 -10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .top-brands{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        overflow: scroll;
+    }
+    .top-brands a{
+        display: block;
+        border-bottom: 1px solid;
+    }
+    .toggle-brand{
+        visibility: visible;
+        position: absolute;
+        top: 2%;
+        left: 80%;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 128, 0, 0.775);
+        cursor: pointer;
+    }
+    .toggle-brand:hover{
+        background-color: rgba(255, 128, 0, 0.558);
+    }
+    .toggle-brand span{
+        font-size: 4rem;
+    }
+    .category-ads{
+        width: 100%;
+    }
+    .showcase button{
+        font-size: 1.2rem;
+    }
+    
+
+
+    .hot-deal-container img{
+        width: 90%;
+        left: 0;
+    }
+    .deal-text{
+        padding: 0;
+    }
+    .deal-text p{
+        display: block;
+    }
+    .deal-text p{
+        font-size: 1.5em;
+    }
+    .box{
+        width: 45%;
+    }
+    .box1{
+        left: 0;
+    }
+    .box2{
+        left: 50%;
+    }
+    .box3{
+        left: 100%;
+    }
+    .box4{
+        left: 150%;
+    }
+    .box5{
+        left: 200%;
+    }
+}

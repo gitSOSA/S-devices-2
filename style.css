@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    width: 100vw;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    user-select: none;
+}
+header{
+    width: 100vw;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.743);
+    position: relative;
+}
+.head-div{
+    border-bottom: 3px solid white;
+    width: 100%;
+    height: 60%;
+    padding: 1.6rem;
+    position: relative;
+}
+.logo{
+    height: 80%;
+    width: 13%;
+}
+.search{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.824);
+    width: 50%;
+    height: 40%;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 32.5%;
+    left: 23%;
+}
+.search input{
+    width: 80%;
+    padding: 1.6rem;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.search button{
+    width: 20%;
+    border-width: 0 0 0 3px;
+    cursor: pointer;
+    background-color: rgba(255, 128, 0, 0.798);
+    transition: all 0.2s ease;
+}
+.search button:hover{
+    background-color: rgba(255, 128, 0, 0.563);
+}
+.search input:focus ~ button{
+    border-left: 3px solid white;
+}
+.cart{
+    height: 35%;
+    width: 10%;
+    position: absolute;
+    top: 39%;
+    left: 80%;
+    transition: all 0.2s ease;
+}
+.s-cart{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-around;
+    text-decoration: none;
+    background-color: rgba(255, 128, 0, 0.798);
+    color: black;
+    box-shadow: 0 5px 20px rgba(250, 250, 250, 0.3);
+}
+.s-cart .cart-icon{
+    justify-self: flex-end;
+}
+.menu{
+    visibility: hidden;
+}
+.nav-div{
+    height: 40%;
+    width: 100%;
+    position: relative;
+    left: 22%;
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+}
+.close-menu{
+    visibility: hidden;
+}
+.nav-div nav{
+    display: flex;
+    gap: 30px;
+}
+.nav-div a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    padding: 5px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.nav-div a:hover{
+    background-color: rgba(255, 128, 0, 0.563);
+}
+.sign-in{
+    background-color: rgba(255, 128, 0, 0.798);
+}
+
+/* Main style */
+
+main{
+    width: 100vw;
+}
+.ad{
+    margin-top: 10px;
+    width: 100%;
+    height: 360px;
+    background-image: url(s-ad.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ad a{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 128, 0, 0.257);
+    padding: 10px;
+    border: 2px solid black;
+    transition: all 0.2s ease;
+    font-weight: bolder;
+}
+.ad a:hover{
+    border: none;
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+.container{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+    height: 650px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 -10px 20px rgba(0, 0, 0, 0.3);
+    padding: 1.6rem;
+    display: flex;
+    gap: 4%;
+}
+.top-brands{
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.743);
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    gap: 5%;
+    overflow-y: scroll;
+    position: relative;
+}
+.top-brands h3{
+    text-transform: uppercase;
+    background-color: black;
+    color: rgba(255, 128, 0, 0.517);
+    width: 100%;
+    padding: 1.6rem;
+    user-select: none;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.top-brands a{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 128, 0, 0.798);
+    padding: 1.6rem;
+    transition: all 0.2a ease;
+}
+.top-brands a:hover{
+    background-color: rgba(255, 128, 0, 0.517);
+}
+.category-ads{
+    width: 75%;
+    height: 100%;
+}
+.category-ads .background{
+    width: 100%;
+    height: 80%;
+}
+.background img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+#img2{
+    display: none;
+}
+#img3{
+    display: none;
+}
+#img4{
+    display: none;
+}
+.category-ads .showcase{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.showcase button{
+    width: 25%;
+    font-size: 2rem;
+    border: none;
+    border-right: 1px solid black;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.743);
+    color: white;
+    transition: all 0.2s ease;
+}
+#btn1{
+    background-color: rgba(0, 0, 0, 0.531);
+    border-top: 20px solid rgba(255, 128, 0, 0.798);
+}
+#btn4{
+    border-right: none;
+}
+.toggle-brand{
+    visibility: hidden;
+}
+.hot-deal-container{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom,rgba(255, 128, 0, 0.775), rgba(0, 0, 0, 0.753));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.hot-deal-container img{
+    position: absolute;
+    left: 10%;
+}
+.hot-deal{
+    width: 85%;
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    border: 2px solid white;
+    box-shadow: 2px 0 5px rgba(255, 255, 255, 0.612), 0px 2px 5px rgba(255, 255, 255, 0.612), -2px 0 5px rgba(255, 255, 255, 0.604), 0 -2px 5px rgba(255, 255, 255, 0.612);
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+}
+.hot-deal h3{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    font-size: 4rem;
+}
+.deal-text{
+    width: 60%;
+    height: 80%;
+    align-self: flex-end;
+    padding: 1rem;
+    text-align: center;
+    line-height: 30px;
+}
+.deal-text p{
+    display: inline;
+    color: rgba(255, 128, 0, 0.798);
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.deal-text span{
+    font-weight: bolder;
+}
+.deal-text b{
+    color: rgba(255, 128, 0, 0.798);
+}
+.deal-text ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.deal-text a{
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 0.2s ease;
+}
+.hot-deal-link1{
+    background-color: rgba(255, 128, 0, 0.798);
+    color: black;
+}
+.hot-deal-link1:hover{
+    background-color: rgba(255, 128, 0, 0.524);
+}
+.hot-deal-link2{
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.403);
+    color: white;
+}
+.hot-deal-link2:hover{
+    background-color: rgba(0, 0, 0, 0.543);
+}
+.deal-img{
+    width: 40%;
+    height: 70%;
+    background-image: url('iphone14-promax.png');
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(10px 10px 5px);
+}
+
+
+.stocks{
+    width: 100%;
+    height: 350px;
+    padding: 1.6rem;
+    margin-bottom: 50px;
+}
+.header{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(255, 128, 0, 0.517);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+.header span{
+    pointer-events: none;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+}
+.header a:hover{
+    text-decoration: underline;
+}
+.stocks-container{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    overflow-x: auto;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+}
+.box{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.box img{
+    height: 55%;
+}
+.box .buy{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.box:hover a{
+    background-color: rgba(255, 255, 255, 0.119);
+}
+.box .price2{
+    text-decoration: 2px line-through black;
+}
+.box1{
+    left: 0;
+}
+.box2{
+    left: 33%;
+}
+.box3{
+    left: 66%;
+}
+.box4{
+    left: 99%;
+}
+.box5{
+    left: 132%;
+}
+article{
+    padding: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.065);
+    margin-bottom: 100px;
+}
+article h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgba(255, 128, 0, 0.798);
+}
+article h1::first-letter{
+    color: black;
+}
+article h1>span{
+    font-size: 1.6rem;
+    text-transform: none;
+    color: black;
+}
+.back-to-top{
+    width: 100vw;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.743);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-to-top button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contents-container{
+    width: 100%;
+    height: 200px;
+    padding: 0 1.6rem 0 1.6rem;
+    background-color: rgba(0, 0, 0, 0.602);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contents-container div{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-around;
+    font-weight: bolder;
+    color: white;
+}
+.contents-container div>span{
+    font-size: 4rem;
+    color: rgba(255, 128, 0, 0.798);
+}
+.contents-container div>small{
+    font-weight: 100;
+}
+.connect-container{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.849);
+    padding: 0 1.6rem 0 1.6rem;
+    display: flex;
+}
+.connect-container div{
+    width: 33.3%;
+    height: 100%;
+    color: white;
+}
+.connect1{
+    padding: 1.6rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.connect1 svg{
+    color: rgba(255, 128, 0, 0.798);
+}
+.connect2{
+    padding: 1.6rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.connect2 p{
+    font-size: 2rem;
+}
+.connect2 ul{
+    list-style-type: none;
+    line-height: 3rem;
+}
+.connect2 a{
+    text-decoration: none;
+    color: silver;
+}
+.connect2 a:hover{
+    text-decoration: underline;
+}
+.connect3{
+    padding: 1.6rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.connect3 p{
+    font-size: 2rem;
+}
+.connect3 ul{
+    list-style-type: none;
+    line-height: 3rem;
+}
+.connect3 a{
+    text-decoration: none;
+    color: silver;
+}
+.connect3 a:hover{
+    text-decoration: underline;
+}
+.final{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.849);
+    border-top: 1px solid rgba(255, 128, 0, 0.492);
+    padding: 3rem 0 1.6rem 0;
+    text-align: center;
+}
+.final a{
+    color: silver;
+    text-decoration: none;
+}
+.final a:hover{
+    text-decoration: underline;
+}
+.final p{
+    font-size: 1.4rem;
+}
